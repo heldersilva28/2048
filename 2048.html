@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Hélder Silva - Beautiful 2048 Game">
+    <meta name="keywords" content="2048, game, puzzle, javascript, phaser">
+    <meta name="author" content="Hélder Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2048 - Hélder Silva</title>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/phaser.min.js"></script>
+    <script src="https://unpkg.com/mathjs@6.2.5/dist/math.min.js"></script>
+
+    <!-- Reference scenes -->
+    <script type="text/javascript" src="js/MainScene.js"></script>
+    <script type="text/javascript" src="js/SplashScreen.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+
+    <!-- reference custom classes -->
+    <script type="text/javascript" src="js/Tile.js"></script>
+    <script type="text/javascript" src="js/Board.js"></script>
+
+    <!-- Link Stylesheets -->
+    <link rel="stylesheet" href="css/game.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>2048</h1>
+      <p class="subtitle">Join the tiles, get to 2048!</p>
+      
+      <div class="instructions">
+        <strong>HOW TO PLAY:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      </div>
+
+      <div style="font-family:'peepo'; position: absolute; left:-1000px; visibility:hidden;">.</div>
+      <div id="game"></div>
+    </div>
+  </body>
+</html>

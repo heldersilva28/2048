@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Clear+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    background: #faf8ef;
+    color: #776e65;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    color: #776e65;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #776e65;
+}
+
+.instructions {
+    background: #bbada0;
+    color: #f9f6f2;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+#game {
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #bbada0;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.score-container {
+    background: #bbada0;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #f9f6f2;
+    min-width: 120px;
+}
+
+.score-label {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.score-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.new-game-btn {
+    background: #8f7a66;
+    color: #f9f6f2;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: inherit;
+}
+
+.new-game-btn:hover {
+    background: #9f8a76;
+}
+
+.new-game-btn:active {
+    background: #7f6a56;
+}
+
+@media (max-width: 850px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    .game-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #game {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+}
