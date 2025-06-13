@@ -94,13 +94,6 @@ class SplashScreen extends Phaser.Scene {
     });
     this.newGameText.setOrigin(0.5, 0.5);
 
-    // Add icon/symbol to the button
-    this.playIcon = this.add.text(buttonX - 60, buttonY, "▶", {
-      fontSize: "24px",
-      fill: "#f9f6f2"
-    });
-    this.playIcon.setOrigin(0.5, 0.5);
-
     // Make button interactive
     const buttonHitArea = new Phaser.Geom.Rectangle(
       buttonX - buttonWidth/2, 
